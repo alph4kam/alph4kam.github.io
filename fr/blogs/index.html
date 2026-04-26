@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        
+        Publications
+        
+    </title>
+
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://alph4kam.fr/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://alph4kam.fr/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://alph4kam.fr/favicons/favicon-16x16.png">
+    <link rel="manifest" href="https://alph4kam.fr/favicons/site.webmanifest">
+
+    
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    
+    <link rel="stylesheet" href="/css/main.css">
+
+    <script>
+        const currentTheme = localStorage.getItem('color-theme');
+        if (currentTheme === 'dark') {
+            document.documentElement.classList.add('dark');
+        } else if (currentTheme === 'light') {
+            document.documentElement.classList.remove('dark');
+        } else if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+            document.documentElement.classList.add('dark');
+        }
+    </script>
+</head>
+
+<body
+    class="min-h-screen bg-bg-primary-light dark:bg-bg-primary-dark text-text-primary-light dark:text-text-primary-dark">
+    
+<header class="py-6 relative">
+    <div class="max-w-7xl mx-auto px-6 lg:px-0">
+        <div class="md:flex md:items-center md:justify-between md:gap-8 lg:gap-12">
+            <div class="flex justify-between items-center md:flex-shrink-0">
+                
+                
+                
+                
+                <a href="https://alph4kam.fr/fr/"
+                    class="flex items-center gap-3 text-base md:text-lg lg:text-xl font-bold hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark transition-colors duration-200">
+                    
+                    <img src="/images/profile.jpg" alt="Blog profile"
+                        class="w-9 h-9 rounded-full object-cover object-right border border-border-secondary-light dark:border-border-secondary-dark"
+                        decoding="async" />
+                    
+                    <span>Alph4kam</span>
+                </a>
+                
+                
+                <button id="mobile-menu-button"
+                    class="md:hidden text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark focus:outline-none">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+            
+            <nav class="hidden md:flex flex-wrap justify-center items-center gap-6">
+                
+                
+                <div class="menu-group relative block">
+                    <button type="button"
+                        class='menu-toggle flex items-center gap-1 cursor-pointer text-sm lg:text-lg hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark transition-colors duration-200 text-accent-light dark:text-accent-dark font-bold'
+                        aria-haspopup="true" aria-expanded="false">
+                        Publications
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m6 9 6 6 6-6"/>
+</svg>
+                        
+                    </button>
+                    <div
+                        class="menu-dropdown absolute top-full left-0 min-w-[180px] mt-[0.35rem] p-[0.35rem] rounded-lg z-30 border-border-secondary-light dark:border-border-secondary-dark shadow-lg overflow-hidden hidden">
+                        
+                        <a href="https://alph4kam.fr/fr/blogs/"
+                            class='px-4 py-3 block no-underline rounded-md text-xs lg:text-base hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark hover:bg-bg-primary-light dark:hover:bg-bg-tertiary-dark transition-colors duration-200 text-accent-light dark:text-accent-dark ont-bold'>Tous</a>
+                        
+                        <a href="https://alph4kam.fr/fr/tags/"
+                            class='px-4 py-3 block no-underline rounded-md text-xs lg:text-base hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark hover:bg-bg-primary-light dark:hover:bg-bg-tertiary-dark transition-colors duration-200 '>Tags</a>
+                        
+                        <a href="https://alph4kam.fr/fr/categories/"
+                            class='px-4 py-3 block no-underline rounded-md text-xs lg:text-base hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark hover:bg-bg-primary-light dark:hover:bg-bg-tertiary-dark transition-colors duration-200 '>Catégories</a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <a href="https://alph4kam.fr/fr/about/"
+                    class='block text-sm lg:text-lg hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark transition-colors duration-200 '>À propos</a>
+                
+                
+                
+                <a href="https://alph4kam.fr/fr/contact/"
+                    class='block text-sm lg:text-lg hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark transition-colors duration-200 '>Contact</a>
+                
+                
+            </nav>
+            
+            <div class="hidden md:flex justify-end items-center">
+                <div class="flex items-center">
+                    <div id="local-time" class="text-sm lg:text-lg transition-colors duration-200">
+                    </div>
+                </div>
+                <div class="language-switcher relative block ml-4">
+                    <button type="button"
+                        class="language-switcher-btn flex items-center gap-1 cursor-pointer text-sm lg:text-lg hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark transition-colors duration-200 p-2 rounded-md"
+                        aria-haspopup="true" aria-expanded="false">
+                        FR
+                        
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m6 9 6 6 6-6"/>
+</svg>
+                        
+                    </button>
+                    <div
+                        class="language-dropdown absolute top-full left-0 min-w-[180px] mt-[0.35rem] p-[0.35rem] rounded-lg z-30 border border-border-secondary-light dark:border-border-secondary-dark shadow-lg overflow-hidden hidden">
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        <a href="https://alph4kam.fr/blogs/"
+                            class="px-4 py-3 block no-underline rounded-md text-sm lg:text-lg hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark hover:bg-bg-primary-light dark:hover:bg-bg-tertiary-dark transition-colors duration-200 ">
+                            English
+                        </a>
+                        
+                        
+                        
+                        
+                        
+                        <a href="https://alph4kam.fr/fr"
+                            class="px-4 py-3 block no-underline rounded-md text-sm lg:text-lg hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark hover:bg-bg-primary-light dark:hover:bg-bg-tertiary-dark transition-colors duration-200 text-accent-light dark:text-accent-dark font-bold">
+                            Français
+                        </a>
+                        
+                    </div>
+                </div>
+                <button id="theme-toggle-button-desktop"
+                    class="block text-sm lg:text-lg hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark transition-colors duration-200 p-2 rounded-md">
+                    <svg id="theme-toggle-dark-icon-desktop" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                        <path
+                            d="M21.7519 15.0021C20.597 15.484 19.3296 15.7501 18 15.7501C12.6152 15.7501 8.25 11.3849 8.25 6.00011C8.25 4.67052 8.51614 3.40308 8.99806 2.24817C5.47566 3.71798 3 7.19493 3 11.2501C3 16.6349 7.36522 21.0001 12.75 21.0001C16.8052 21.0001 20.2821 18.5245 21.7519 15.0021Z"
+                            stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                    <svg id="theme-toggle-light-icon-desktop" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true" data-slot="icon"
+                        class="w-5 h-5 hidden">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    
+    <div id="mobile-menu" class="hidden fixed inset-0 overflow-y-auto z-50 backdrop-blur-2xl">
+        <div class="flex flex-col h-full">
+            <div class="flex justify-between items-center p-6">
+                <span class="text-xl font-bold">Menu</span>
+                <div class="flex items-center gap-4">
+                    <div class="language-switcher relative block">
+                        <button type="button"
+                            class="language-switcher-btn flex items-center gap-1 cursor-pointer text-text-secondary-light dark:text-text-secondary-dark hover:text-text-primary-light dark:hover:text-text-primary-dark transition-colors duration-200 p-2 rounded-md"
+                            aria-haspopup="true" aria-expanded="false">
+                            FR
+                            
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="m6 9 6 6 6-6"/>
+</svg>
+                            
+                        </button>
+                        <div
+                            class="language-dropdown absolute top-full left-0 min-w-[180px] mt-[0.35rem] p-[0.35rem] rounded-lg z-30 border border-border-secondary-light dark:border-border-secondary-dark shadow-lg overflow-hidden hidden">
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            <a href="https://alph4kam.fr/blogs/"
+                                class=" px-4 py-3 block no-underline rounded-md hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark hover:bg-bg-primary-light dark:hover:bg-bg-tertiary-dark transition-colors duration-200">
+                                English
+                            </a>
+                            
+                            
+                            
+                            
+                            
+                            <a href="https://alph4kam.fr/fr"
+                                class="font-bold px-4 py-3 block no-underline rounded-md hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark hover:bg-bg-primary-light dark:hover:bg-bg-tertiary-dark transition-colors duration-200">
+                                Français
+                            </a>
+                            
+                        </div>
+                    </div>
+                    <button id="theme-toggle-button-mobile"
+                        class="text-text-primary-light dark:text-text-primary-dark hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark transition-colors duration-200 p-2 rounded-md">
+                        <svg id="theme-toggle-dark-icon-mobile" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg" class="w-5 h-5">
+                            <path
+                                d="M21.7519 15.0021C20.597 15.484 19.3296 15.7501 18 15.7501C12.6152 15.7501 8.25 11.3849 8.25 6.00011C8.25 4.67052 8.51614 3.40308 8.99806 2.24817C5.47566 3.71798 3 7.19493 3 11.2501C3 16.6349 7.36522 21.0001 12.75 21.0001C16.8052 21.0001 20.2821 18.5245 21.7519 15.0021Z"
+                                stroke="currentColor" stroke-width="1.5" stroke-linecap="round"
+                                stroke-linejoin="round" />
+                        </svg>
+                        <svg id="theme-toggle-light-icon-mobile" xmlns="http://www.w3.org/2000/svg" fill="none"
+                            viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true"
+                            data-slot="icon" class="w-5 h-5 hidden">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z" />
+                        </svg>
+                    </button>
+                    <button id="mobile-menu-close"
+                        class="text-text-primary-light dark:text-text-primary-dark hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark transition-colors duration-200 p-2 rounded-md"
+                        data-menu>
+                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <nav class="flex flex-col p-6 space-y-4">
+                
+                
+                <div class="space-y-2">
+                    <a href="https://alph4kam.fr/fr/blogs/"
+                        class='text-xl hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark transition-colors duration-200  text-accent-light dark:text-accent-dark font-bold'
+                        data-menu>Publications</a>
+                    <div
+                        class="pl-4 flex flex-col space-y-2 border-l border-border-secondary-light dark:border-border-secondary-dark">
+                        
+                        <a href="https://alph4kam.fr/fr/blogs/"
+                            class='text-lg hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark transition-colors duration-200  text-accent-light dark:text-accent-darkfont-bold'
+                            data-menu>Tous</a>
+                        
+                        <a href="https://alph4kam.fr/fr/tags/"
+                            class='text-lg hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark transition-colors duration-200 '
+                            data-menu>Tags</a>
+                        
+                        <a href="https://alph4kam.fr/fr/categories/"
+                            class='text-lg hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark transition-colors duration-200 '
+                            data-menu>Catégories</a>
+                        
+                    </div>
+                </div>
+                
+                
+                
+                <a href="https://alph4kam.fr/fr/about/"
+                    class='text-xl hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark transition-colors duration-200 '
+                    data-menu>À propos</a>
+                
+                
+                
+                <a href="https://alph4kam.fr/fr/contact/"
+                    class='text-xl hover:text-text-tertiary-light dark:hover:text-text-tertiary-dark transition-colors duration-200 '
+                    data-menu>Contact</a>
+                
+                
+            </nav>
+            <div class="mt-auto p-6">
+                <div class="flex items-center justify-center">
+                    <div id="mobile-local-time" class="text-lg text-text-secondary-light dark:text-text-secondary-dark">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<script>
+    
+    let is12HourFormat = false;
+    
+</script>
+<script src="/js/header.js" defer></script>
+
+    <main>
+        
+<div class="px-6 lg:px-0 max-w-5xl mx-auto mt-16">
+    <h1 class="text-3xl font-bold mb-10 flex items-center gap-3">
+        
+        <span class="text-accent-light dark:text-accent-dark ergonomy-icon">
+            <?xml version="1.0" encoding="iso-8859-1"?>
+<svg fill="currentColor" height="800px" width="800px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+	 viewBox="0 0 512 512" xml:space="preserve">
+<g>
+	<g>
+		<path d="M501.801,47.923H10.199C4.566,47.923,0,52.489,0,58.122v322.581c0,5.633,4.566,10.199,10.199,10.199h179.845v52.775
+			h-36.179c-5.633,0-10.199,4.566-10.199,10.199c0,5.633,4.566,10.199,10.199,10.199h204.27v0.001
+			c5.633,0,10.199-4.566,10.199-10.199c0-5.633-4.566-10.199-10.199-10.199h-36.179v-52.775h179.845
+			c5.633,0,10.199-4.566,10.199-10.199V58.122C512,52.489,507.434,47.923,501.801,47.923z M301.558,443.679h-91.116v-52.775h91.116
+			V443.679z M491.602,370.504H20.398V68.321h471.203V370.504z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M238.659,92.178H55.75c-5.633,0-10.199,4.566-10.199,10.199v131.818c0,5.633,4.566,10.199,10.199,10.199h182.909
+			c5.633,0,10.199-4.566,10.199-10.199V102.378C248.859,96.745,244.292,92.178,238.659,92.178z M80.847,223.996l32.413-32.413
+			l32.413,32.413H80.847z M228.46,223.997h-54.065v-0.001c-0.261-0.337-0.537-0.664-0.846-0.973l-17.522-17.522l39.683-39.683
+			l32.751,32.751V223.997z M228.46,169.72l-25.54-25.539c-3.983-3.983-10.441-3.982-14.424,0l-46.895,46.895l-21.13-21.13
+			c-3.983-3.983-10.441-3.983-14.425,0l-40.099,40.099v-97.469H228.46V169.72z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M465.262,110.547l-18.462-18.463c-9.398-9.397-24.687-9.396-34.084,0L280.37,224.431
+			c-1.231,1.231-2.079,2.699-2.549,4.257l-0.001,0.001l-0.002,0.008c-0.008,0.026-0.015,0.051-0.023,0.076L263.47,276.11H55.75
+			c-5.633,0-10.199,4.566-10.199,10.199c0,5.633,4.566,10.199,10.199,10.199h215.28c0.003,0,0.007,0,0.01,0c0.002,0,0.004,0,0.007,0
+			h0.312c1.496,0,2.913-0.33,4.193-0.909l53.106-16.072l0.001-0.001c1.593-0.482,3.059-1.351,4.256-2.549l132.347-132.347
+			c4.552-4.552,7.059-10.605,7.059-17.042C472.321,121.15,469.814,115.098,465.262,110.547z M286.319,271.028l6.092-20.131
+			l14.039,14.039L286.319,271.028z M325.703,255.341l-23.698-23.698l103.538-103.538l23.698,23.698L325.703,255.341z
+			 M450.839,130.207l-7.174,7.173l-23.698-23.699l7.174-7.173c1.443-1.444,3.793-1.444,5.236,0l18.462,18.463
+			c0.943,0.943,1.084,2.045,1.084,2.618C451.924,128.162,451.783,129.264,450.839,130.207z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M412.048,325.158H55.75c-5.633,0-10.199,4.566-10.199,10.199c0,5.633,4.566,10.199,10.199,10.199h356.298
+			c5.633,0,10.199-4.566,10.199-10.199C422.247,329.724,417.681,325.158,412.048,325.158z"/>
+	</g>
+</g>
+<g>
+	<g>
+		<path d="M457.333,325.158h-5.509c-5.633,0-10.199,4.566-10.199,10.199c0,5.633,4.566,10.199,10.199,10.199h5.509
+			c5.633,0,10.199-4.566,10.199-10.199C467.533,329.724,462.966,325.158,457.333,325.158z"/>
+	</g>
+</g>
+</svg>
+        </span>
+        
+        Publications
+    </h1>
+    
+    
+    <p class="text-center text-text-secondary-light dark:text-text-secondary-dark mt-12">Aucune publication trouvée pour le moment.</p>
+    
+</div>
+
+    </main>
+    
+<footer class="mt-32 text-center">
+    <div class="max-w-5xl mx-auto">
+        <div class="border-t border-border-secondary-light dark:border-border-secondary-dark pt-5">
+            <div class="flex flex-col items-center justify-center gap-2">
+                
+                
+                <p class="text-text-secondary-light dark:text-text-secondary-dark text-xm ">© 2026 Abdoulaye Katchala Mele</p>
+                
+                <p class="text-text-secondary-light dark:text-text-secondary-dark text-xm pb-12">Construit avec <a
+                        href="https://gohugo.io/" target="_blank"
+                        class="text-accent-light dark:text-accent-dark hover:text-text-primary-light dark:hover:text-text-primary-dark">Hugo</a>
+                    •
+                    Thème basé sur <a href="https://themes.gohugo.io/themes/hugo-noir/" target="_blank"
+                        class="text-accent-light dark:text-accent-dark hover:text-text-primary-light dark:hover:text-text-primary-dark">Hugo
+                        Noir</a>
+                </p>
+
+            </div>
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
