@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Posts on Blog</title>
-    <link>https://alph4kam.fr/blogs/</link>
-    <description>Recent content in Posts on Blog</description>
+    <title>Posts on Alph4kam | Home</title>
+    <link>https://www.alph4kam.fr/blogs/</link>
+    <description>Recent content in Posts on Alph4kam | Home</description>
     <generator>Hugo</generator>
     <language>en-us</language>
-    <atom:link href="https://alph4kam.fr/blogs/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="https://www.alph4kam.fr/blogs/index.xml" rel="self" type="application/rss+xml" />
   </channel>
 </rss>
