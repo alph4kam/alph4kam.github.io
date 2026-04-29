@@ -2,76 +2,76 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://www.alph4kam.fr/fr/about/</loc>
+    <loc>https://alph4kam.fr/fr/about/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://www.alph4kam.fr/about/"
+                href="https://alph4kam.fr/about/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.alph4kam.fr/fr/about/"
+                href="https://alph4kam.fr/fr/about/"
                 />
   </url><url>
-    <loc>https://www.alph4kam.fr/fr/</loc>
+    <loc>https://alph4kam.fr/fr/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://www.alph4kam.fr/"
+                href="https://alph4kam.fr/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.alph4kam.fr/fr/"
+                href="https://alph4kam.fr/fr/"
                 />
   </url><url>
-    <loc>https://www.alph4kam.fr/fr/categories/</loc>
+    <loc>https://alph4kam.fr/fr/categories/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://www.alph4kam.fr/categories/"
+                href="https://alph4kam.fr/categories/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.alph4kam.fr/fr/categories/"
+                href="https://alph4kam.fr/fr/categories/"
                 />
   </url><url>
-    <loc>https://www.alph4kam.fr/fr/contact/</loc>
+    <loc>https://alph4kam.fr/fr/contact/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://www.alph4kam.fr/contact/"
+                href="https://alph4kam.fr/contact/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.alph4kam.fr/fr/contact/"
+                href="https://alph4kam.fr/fr/contact/"
                 />
   </url><url>
-    <loc>https://www.alph4kam.fr/fr/blogs/</loc>
+    <loc>https://alph4kam.fr/fr/blogs/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://www.alph4kam.fr/blogs/"
+                href="https://alph4kam.fr/blogs/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.alph4kam.fr/fr/blogs/"
+                href="https://alph4kam.fr/fr/blogs/"
                 />
   </url><url>
-    <loc>https://www.alph4kam.fr/fr/tags/</loc>
+    <loc>https://alph4kam.fr/fr/tags/</loc>
     <xhtml:link
                 rel="alternate"
                 hreflang="en-us"
-                href="https://www.alph4kam.fr/tags/"
+                href="https://alph4kam.fr/tags/"
                 />
     <xhtml:link
                 rel="alternate"
                 hreflang="fr"
-                href="https://www.alph4kam.fr/fr/tags/"
+                href="https://alph4kam.fr/fr/tags/"
                 />
   </url>
 </urlset>
