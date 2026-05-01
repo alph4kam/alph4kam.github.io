@@ -1,1 +1,4 @@
 User-agent: *
+Allow: /
+
+Sitemap: https://alph4kam.fr/sitemap.xml
